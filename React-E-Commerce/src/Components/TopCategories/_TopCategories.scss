@@ -1,0 +1,30 @@
+.shop-top-categories {
+    padding: 80px 0;
+    &__container {
+        overflow: hidden;
+        width: 100%;
+        max-width: 1360px;
+        margin-inline: auto;
+        padding: 0 40px;
+        // margin-left: auto;
+        // margin-right: auto;
+    }
+    &__header {
+        font-size: 1.8em;
+        margin-bottom: 40px;
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        grid-column-gap: 23px;
+        grid-row-gap: 16px;
+        grid-template-rows: auto;
+        @media screen and (max-width: 900px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @media screen and (max-width: 650px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
