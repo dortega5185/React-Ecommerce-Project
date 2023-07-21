@@ -1,0 +1,36 @@
+.category-card {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    &__image {
+        height: 200px;
+        border-radius: 10px;
+        max-width: 100%;
+        vertical-align: middle;
+        // display: inline-block;
+        border: 0;
+        @media screen and (max-width: 900px) {
+            height: 250px;
+        }
+        @media screen and (max-width: 650px) {
+            height: 200px;
+        }
+    }
+    &__header {
+        font-size: 1.4em;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        right: auto;
+        bottom: auto;
+        z-index: 1;
+        width: 100%;
+        color: #fff;
+        // opacity: .5;
+        font-weight: 600;
+        text-align: center;
+        background-color: #00000050;
+        line-height: 1.4em * 1.2;
+    }
+}

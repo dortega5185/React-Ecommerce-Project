@@ -1,0 +1,42 @@
+.hero-section {
+    background-image: url('images/salesHero.png');
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    &__overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.258);
+        display: flex;
+        flex-direction: column;
+        // text-align: left;
+        justify-content: center;
+        color: #fff;
+        padding: 0 6%;
+    }
+    &__header {
+        font-size: 4rem;
+        width: 60%;
+    }
+    &__body-text {
+        font-size: 1.3rem;
+        width: 50%;
+        margin: 20px 0;
+    }
+    &__button {
+        border-radius: 25px;
+        padding: 10px 30px;
+        background-color: rgb(210, 66, 23);
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.2rem;
+        border: 0;
+        width: fit-content;
+        margin-top: 20px;
+    }
+}
